@@ -1,0 +1,47 @@
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.deps.json
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.runtimeconfig.json
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.runtimeconfig.dev.json
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csprojAssemblyReference.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csproj.CoreCompileInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorAssemblyInfo.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorAssemblyInfo.cs
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.AssemblyInfoInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.AssemblyInfo.cs
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorTargetAssemblyInfo.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\Services.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\WebServices.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\WebServices.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\Services.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csproj.CopyComplete
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.deps.json
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.runtimeconfig.json
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.runtimeconfig.dev.json
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csprojAssemblyReference.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csproj.CoreCompileInputs.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorAssemblyInfo.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorAssemblyInfo.cs
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.AssemblyInfoInputs.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.AssemblyInfo.cs
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorTargetAssemblyInfo.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.deps.json
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.runtimeconfig.json
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.runtimeconfig.dev.json
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\bin\Debug\netcoreapp2.1\API_PROYECTO.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csprojAssemblyReference.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.csproj.CoreCompileInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorAssemblyInfo.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorAssemblyInfo.cs
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.AssemblyInfoInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.AssemblyInfo.cs
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.RazorTargetAssemblyInfo.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\API_PROYECTO\obj\Debug\netcoreapp2.1\API_PROYECTO.pdb

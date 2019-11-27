@@ -1,0 +1,97 @@
+﻿
+@{
+	ViewBag.Title = "SignIn";
+}
+
+@if (TempData["msm"] != null)
+{
+	<script type="text/javascript">
+       alert("@TempData["msm"]");
+	</script>
+}
+
+<head>
+	<link href="~/Content/PantallaDividida.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				@Html.ActionLink("CHAT", "LogIn", "Home", new { area = "" }, new { @class = "navbar-brand" })
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>@Html.ActionLink("Log In", "LogIn", "Home")</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" no-gutters>
+		<div class="col-md-6" no-gutters>
+			<div class="leftside" no-gutters>
+				<br />
+				<br />
+				<form method="post">
+					<div class="container">
+						<div class="col-md-4 col-md-offset-1">
+							<div class="login-panel panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Sign In</h3>
+								</div>
+								<div class="panel-body">
+									<fieldset>
+										<div class="form-group">
+											<input class="form-control" placeholder="Usuario" name="usuario" type="text" id="txtUsuario">
+										</div>
+										<div class="form-group">
+											<input class="form-control" placeholder="Contraseña" name="contraseña" type="password" id="txtPassword">
+										</div>
+										<div class="form-group">
+											<input class="form-control" placeholder="Nombre" name="nombre" type="text" id="txtNombre" />
+										</div>
+										<div class="form-group">
+											<input class="form-control" placeholder="Apellido" name="apellido" type="text" id="txtApellido" />
+										</div>
+										<div class="form-group">
+											<input class="form-control" placeholder="Correo" name="correo" type="text" id="txtCorreo" />
+										</div>
+										<div class="form-group">
+											<input class="form-control" placeholder="Edad" name="edad" type="number" id="txtEdad" />
+										</div>
+										<button id="btnIngresar" class="btn btn-lg btn-success btn-block" type="submit">Sign In</button>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="rightside" aling="center" no-gutters>
+				<br />
+				<br />
+				<br />
+				<center>
+					<h1 style="font-family:'Baskerville Old Face'">Chat Express</h1>
+				</center>
+				<center>
+					<img src="@Url.Content("~/Archivos/LogoChat.png")" />
+				</center>
+				<br />
+				<br />
+				<br />
+				<br />
+				<center>
+					<h1 style="font-family:'Baskerville Old Face'">Resgitrate y unete a la comunidad</h1>
+				</center>
+			</div>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,257 @@
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Proyecto ED2.dll.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Proyecto ED2.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Proyecto ED2.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\csc.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\csc.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\csc.rsp
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\csi.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\csi.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\csi.rsp
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.AppContext.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Console.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.IO.Compression.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.Claims.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.ValueTuple.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\vbc.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\vbc.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\vbc.rsp
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\VBCSCompiler.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Antlr3.Runtime.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Newtonsoft.Json.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Helpers.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Mvc.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Optimization.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Razor.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.WebPages.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.WebPages.Razor.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\WebGrease.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Helpers.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Mvc.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Optimization.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.Razor.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.WebPages.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\System.Web.WebPages.Razor.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Newtonsoft.Json.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Antlr3.Runtime.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.Razor.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.WebPages.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\obj\Debug\Proyecto ED2.csprojAssemblyReference.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\obj\Debug\Proyecto ED2.csproj.CoreCompileInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\obj\Debug\Proyecto ED2.csproj.CopyComplete
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\obj\Debug\Proyecto ED2.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Proyecto ED2\obj\Debug\Proyecto ED2.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Proyecto ED2.dll.config
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Proyecto ED2.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Proyecto ED2.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\csc.exe
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\csc.exe.config
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\csc.rsp
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\csi.exe
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\csi.exe.config
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\csi.rsp
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.AppContext.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Console.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.IO.Compression.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.Claims.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.ValueTuple.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\vbc.exe
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\vbc.exe.config
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\vbc.rsp
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Antlr3.Runtime.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Newtonsoft.Json.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Helpers.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Mvc.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Optimization.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Razor.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.WebPages.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\WebGrease.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Helpers.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Mvc.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Optimization.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.Razor.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.WebPages.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Newtonsoft.Json.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Antlr3.Runtime.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.Razor.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.csprojAssemblyReference.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.csproj.CoreCompileInputs.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.csproj.CopyComplete
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\netstandard.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Algoritms.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Prueba.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Prueba.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Proyecto ED2.dll.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Proyecto ED2.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Proyecto ED2.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\csc.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\csc.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\csc.rsp
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\csi.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\csi.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\csi.rsp
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.AppContext.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Console.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.IO.Compression.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.Claims.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.ValueTuple.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\vbc.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\vbc.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\vbc.rsp
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\VBCSCompiler.exe
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Antlr3.Runtime.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Newtonsoft.Json.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Prueba.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Helpers.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Mvc.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Optimization.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Razor.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.WebPages.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.WebPages.Razor.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\WebGrease.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\netstandard.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Prueba.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Algoritms.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Helpers.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Mvc.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Optimization.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.Razor.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.WebPages.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\System.Web.WebPages.Razor.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Newtonsoft.Json.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Antlr3.Runtime.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.Razor.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.WebPages.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\obj\Debug\Proyecto ED2.csprojAssemblyReference.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\obj\Debug\Proyecto ED2.csproj.CoreCompileInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\obj\Debug\Proyecto ED2.csproj.CopyComplete
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\obj\Debug\Proyecto ED2.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\obj\Debug\Proyecto ED2.pdb

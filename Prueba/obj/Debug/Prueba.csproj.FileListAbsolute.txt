@@ -1,0 +1,6 @@
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Prueba\bin\Debug\Prueba.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Prueba\bin\Debug\Prueba.pdb
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Prueba\obj\Debug\Prueba.csprojAssemblyReference.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Prueba\obj\Debug\Prueba.dll
+C:\Users\jealb\OneDrive\Escritorio\Proyecto ED2\Prueba\obj\Debug\Prueba.pdb
