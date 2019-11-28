@@ -59,7 +59,6 @@ namespace Proyecto_ED2.Controllers
 
                 if (Usuario.contraseña == Q.Cifrar(password, user, path))
 				{
-					TempData["msm"] = "Bienvenido" + Usuario.nombre;
                     var client = new HttpClient();
 					client.BaseAddress = new Uri(urlApi);
 					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -68,9 +67,10 @@ namespace Proyecto_ED2.Controllers
 
 					if (jsonWebToken.IsSuccessStatusCode)
 					{
-						TempData["JWT"] = jsonWebToken;
+						Conversacion2 R = new Conversacion2();
+						R.emisor = user;
 						TempData["msm"] = "Bienvenido " + Usuario.nombre + " " + Usuario.apellido;
-						return RedirectToAction("Mensajes", "Usuario");
+						return RedirectToAction("Mensajes", "Usuario", R);
 					}
 					else
 					{

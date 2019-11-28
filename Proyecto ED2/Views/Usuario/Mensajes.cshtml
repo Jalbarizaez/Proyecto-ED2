@@ -1,6 +1,14 @@
-﻿
+﻿@model Proyecto_ED2.Models.Conversacion2
 @{
 	ViewBag.Title = "Mensajes";
+	bool S = false;
+	if (Model != null)
+	{
+		if (Model.receptor != null)
+		{
+			S = true;
+		}
+	}
 }
 
 @if (TempData["msm"] != null)
@@ -9,58 +17,43 @@
        alert("@TempData["msm"]");
 	</script>
 }
-
 <head>
-	<link href="~/Content/PantallaDividida.css" rel="stylesheet" />
 	<link href="~/Content/styleChat.css" rel="stylesheet" />
 </head>
-<body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				@Html.ActionLink("Refresh", "Mensajes", "Usuario", new { area = "" }, new { @class = "navbar-brand" })
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li>@Html.ActionLink("Cerrar Sesion", "SignIn", "Home")</li>
-				</ul>
-			</div>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li>@Html.ActionLink("Cerrar Sesion", "SignIn", "Home")</li>
+			</ul>
 		</div>
 	</div>
-	<div class="row" no-gutters>
-		<div class="col-md-6" no-gutters>
-			<div class="leftside" no-gutters>
-				<center>
-					<h1>Mensajes </h1>
-				</center>
-			</div>
+</div>
+
+<form method="post">
+	<div class="chatbox">
+		<div class="chat-form">
+			<h1>Receptor</h1><input class="form-control" name="receptor" type="text" style="width:auto" id="receptortxt" />
 		</div>
-		<div class="col-md-6">
-			<div class="rightside" aling="center" no-gutters>
-
-				<div class="chatbox">
-					<div class="chatlogs">
-						<div class="chat friend">
-							<div class="user-photo"><img src="~/Archivos/Default.png"/></div>
-							<p class="chat-message"> Hay mujeres maduras que quieren conocerte</p>
-						</div>
-						<div class="chat self">
-							<div class="user-photo"><img src="~/Archivos/Default2.png" /></div>
-							<p class="chat-message">KHE? en serio!?</p>
-						</div>
+		<div class="chatlogs">
+			@{
+				if (S)
+				{
+					<div class="chat friend">
+						<div class="user-photo"><img src="~/Archivos/Default.png" /></div>
+						<p class="chat-message"> Receptor</p>
 					</div>
-					<div class="chat-form">
-						<textarea></textarea>
-						<button>Enviar</button>
+					<div class="chat self">
+						<div class="user-photo"><img src="~/Archivos/Default2.png" /></div>
+						<p class="chat-message">Emisor</p>
 					</div>
-				</div>
-
-			</div>
+				}
+			}
+		</div>
+		<div class="chat-form">
+			<input class="form-control" name="mensaje" type="text" style="width:80%"  id="mensajetxt"/>
+			<button onclick="@Html.RenderAction("Usuario", "Mensajes", (Model.emisor, Model.receptor))">Enviar</button>
 		</div>
 	</div>
-</body>
+</form>
