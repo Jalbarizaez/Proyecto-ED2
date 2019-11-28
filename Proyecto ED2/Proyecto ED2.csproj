@@ -129,6 +129,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Conversacion.cs" />
     <Compile Include="Models\Messages.cs" />
     <Compile Include="Models\Servicios.cs" />
     <Compile Include="Models\User.cs" />
@@ -139,7 +140,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\ChatBox.css" />
+    <Content Include="Content\styleChat.css" />
     <Content Include="Content\PantallaDividida.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
