@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Proyecto_ED2.Controllers
 {
+	[Authorize]
     public class UsuarioController : Controller
     {
         public ActionResult Index()

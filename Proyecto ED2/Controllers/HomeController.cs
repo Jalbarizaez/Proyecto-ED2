@@ -12,6 +12,7 @@ using System.IO;
 
 namespace Proyecto_ED2.Controllers
 {
+	[AllowAnonymous]
     public class HomeController : Controller
     {
 		private const string urlApi = "https://localhost:44389/";
@@ -53,11 +54,8 @@ namespace Proyecto_ED2.Controllers
 				string path = Server.MapPath("~/Archivos/");
 				var cliente = new HttpClient();
 				string usuario = urlApi + "api/Users/" + user;
-
-
 				var json = await cliente.GetStringAsync(usuario);
 				var Usuario = JsonConvert.DeserializeObject<User>(json);
-                var constraseña = Q.Cifrar(password, user, path);
 
                 if (Usuario.contraseña == Q.Cifrar(password, user, path))
 				{
@@ -72,7 +70,7 @@ namespace Proyecto_ED2.Controllers
 					{
 						TempData["JWT"] = jsonWebToken;
 						TempData["msm"] = "Bienvenido " + Usuario.nombre + " " + Usuario.apellido;
-						return View();
+						return RedirectToAction("Mensajes", "Usuario");
 					}
 					else
 					{
