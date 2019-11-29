@@ -56,7 +56,7 @@ namespace API_PROYECTO.Controllers
         }
 
         // PUT: api/Messages/5
-        [HttpPut("{id}")]
+        [HttpPut("{llave}")]
         public ActionResult Put(string llave, [FromBody] Conversaciones value)
         {
             var mesage = _Service.Get(llave);
@@ -80,7 +80,7 @@ namespace API_PROYECTO.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{llave}")]
         public ActionResult Delete(string llave)
         {
             var mesage = _Service.Get(llave);

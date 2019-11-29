@@ -45,19 +45,19 @@ namespace API_PROYECTO.Models
             return _message.Find<Conversaciones>(x => x.id == id).FirstOrDefault();
         }
 
-        public Conversaciones Get_(string user) =>
-          _message.Find<Conversaciones>(x => x.llave == user).FirstOrDefault();
+        public Conversaciones Get_(string llave) =>
+          _message.Find<Conversaciones>(x => x.llave == llave).FirstOrDefault();
 
 
 
-        public void Update(string id, Conversaciones In) =>
-            _message.ReplaceOne(x => x.llave == id, In);
+        public void Update(string llave, Conversaciones In) =>
+            _message.ReplaceOne(x => x.llave == llave, In);
 
         public void Remove(Conversaciones In) =>
             _message.DeleteOne(x => x.llave == In.llave);
 
-        public void Remove(string id) =>
-            _message.DeleteOne(x => x.llave == id);
+        public void Remove(string llave) =>
+            _message.DeleteOne(x => x.llave == llave);
     }
 }
 
