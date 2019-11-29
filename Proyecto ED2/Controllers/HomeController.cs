@@ -67,10 +67,9 @@ namespace Proyecto_ED2.Controllers
 
 					if (jsonWebToken.IsSuccessStatusCode)
 					{
-						Conversacion2 R = new Conversacion2();
-						R.emisor = user;
 						TempData["msm"] = "Bienvenido " + Usuario.nombre + " " + Usuario.apellido;
-						return RedirectToAction("Mensajes", "Usuario", R);
+						TempData["usuario"] = user;
+						return RedirectToAction("Mensajes", "Usuario", user);
 					}
 					else
 					{

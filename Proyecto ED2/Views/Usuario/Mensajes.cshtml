@@ -1,13 +1,10 @@
-﻿@model Proyecto_ED2.Models.Conversacion2
+﻿@model IList<string>
 @{
 	ViewBag.Title = "Mensajes";
 	bool S = false;
-	if (Model != null)
+	if (TempData["friend"] != null && TempData["usuario"] != null)
 	{
-		if (Model.receptor != null)
-		{
-			S = true;
-		}
+		S = true;
 	}
 }
 
@@ -31,10 +28,22 @@
 	</div>
 </div>
 
+
 <form method="post">
 	<div class="chatbox">
 		<div class="chat-form">
-			<h1>Receptor</h1><input class="form-control" name="receptor" type="text" style="width:auto" id="receptortxt" />
+			<label>Receptor: </label>
+			@{
+				if (TempData["friend"] != null)
+				{
+					<input name="receptor" type="text" value="@TempData["friend"]" />
+				}
+				else
+				{
+					<input name="receptor" type="text" />
+				}
+			}
+			<input name="emisor" type="hidden" value="@TempData["usuario"]" />
 		</div>
 		<div class="chatlogs">
 			@{
@@ -49,11 +58,23 @@
 						<p class="chat-message">Emisor</p>
 					</div>
 				}
+				else
+				{
+					<div class="chat friend">
+						<div class="user-photo"><img src="~/Archivos/Default.png" /></div>
+						<p class="chat-message"> Escribe tu mensaje :), llena la caja de texto "RECEPTOR" y presiona "Enviar" para iniciar una conversacion</p>
+					</div>
+				}
 			}
 		</div>
 		<div class="chat-form">
+<<<<<<< HEAD
 			<input class="form-control" name="mensaje" type="text" style="width:80%"  id="mensajetxt"/>
 			@*<button onclick="@Html.RenderAction("Usuario", "Mensajes", (Model.emisor, Model.receptor))">Enviar</button>*@
+=======
+			<input name="mensaje" type="text">
+			<button>Enviar</button>
+>>>>>>> e27d4a852232a20c6227ba5b3de34e2c628d82bb
 		</div>
 	</div>
 </form>

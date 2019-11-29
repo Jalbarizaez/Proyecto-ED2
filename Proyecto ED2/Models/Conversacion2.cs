@@ -9,6 +9,6 @@ namespace Proyecto_ED2.Models
 	{
 		public string receptor { get; set; }
 		public string emisor { get; set; }
-		public List<string> mensajes { get; set; }
+		public string mensajes { get; set; }
 	}
 }
