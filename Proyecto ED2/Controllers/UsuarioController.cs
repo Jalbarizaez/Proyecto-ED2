@@ -106,18 +106,19 @@ namespace Proyecto_ED2.Controllers
 							var conversacionRecibida2 = JsonConvert.DeserializeObject<Conversacion>(json2);
 
 							clientePUT.BaseAddress = new Uri(urlApi);
-							Conversacion ConversacionPUT = new Conversacion();
-							ConversacionPUT.llave = llave2;
-							ConversacionPUT.id = conversacionRecibida2.id;
-							ConversacionPUT.enviados = conversacionRecibida2.enviados;
-							ConversacionPUT.paths = conversacionRecibida2.paths;
-							List<Messages> Recibidos = conversacionRecibida2.recibidos;
+                            Conversacion ConversacionPUT = new Conversacion();
+                            ConversacionPUT.llave = llave2;
+                            ConversacionPUT.id = conversacionRecibida2.id;
+                            ConversacionPUT.enviados = conversacionRecibida2.enviados;
+                            ConversacionPUT.paths = conversacionRecibida2.paths;
+                            List<Messages> Recibidos = conversacionRecibida2.recibidos;
 							Recibidos.Add(MensajePUT);
 
+                            
 							ConversacionPUT.recibidos = Recibidos;
 							string urlPUT = urlApi + "api/Messages/" + llave;
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
-								new JavaScriptSerializer().Serialize(ConversacionPUT), Encoding.UTF8, "application/json"));
+								new JavaScriptSerializer().Serialize(conversacionRecibida2), Encoding.UTF8, "application/json"));
 						}
 
 						List<Messages> Enviados2 = conversacionRecibida.enviados;

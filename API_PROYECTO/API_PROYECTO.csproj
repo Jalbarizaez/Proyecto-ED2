@@ -17,13 +17,4 @@
     <PackageReference Include="MongoDB.Driver.Core" Version="2.9.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Services">
-      <HintPath>..\Services\bin\Debug\Services.dll</HintPath>
-    </Reference>
-    <Reference Include="WebServices">
-      <HintPath>..\WebServices\bin\Debug\netstandard2.0\WebServices.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

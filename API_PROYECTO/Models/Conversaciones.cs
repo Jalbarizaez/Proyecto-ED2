@@ -12,6 +12,7 @@ namespace API_PROYECTO.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string id { get; set; }
+
         public string llave { get; set; }
         public List<Messages> recibidos { get; set; }
         public List<Messages> enviados { get; set; }

@@ -31,8 +31,8 @@ namespace API_PROYECTO.Models
         public bool exist(string key)
         {
 
-            var message = _message.Find(x => true).ToList();
-            if (message.Any(x => x.llave == key))
+            var messages = Get();
+            if (messages.Any(x => x.llave == key))
             {
                 return false;
             }
@@ -50,14 +50,17 @@ namespace API_PROYECTO.Models
 
 
 
-        public void Update(string llave, Conversaciones In) =>
-            _message.ReplaceOne(x => x.llave == llave, In);
+        public void Update(string id, Conversaciones In)
+        {
+            //var messages = Get();
+            _message.ReplaceOne(x => x.id == id, In);
+        }
 
         public void Remove(Conversaciones In) =>
             _message.DeleteOne(x => x.llave == In.llave);
 
-        public void Remove(string llave) =>
-            _message.DeleteOne(x => x.llave == llave);
+        public void Remove(string id) =>
+            _message.DeleteOne(x => x.id == id);
     }
 }
 

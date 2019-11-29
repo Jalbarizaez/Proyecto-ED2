@@ -56,21 +56,21 @@ namespace API_PROYECTO.Controllers
         }
 
         // PUT: api/Messages/5
-        [HttpPut("{llave}")]
-        public ActionResult Put(string llave, [FromBody] Conversaciones value)
+        [HttpPut("{id}")]
+        public ActionResult Put(string id, [FromBody] Conversaciones value)
         {
-            var mesage = _Service.Get(llave);
+            var mesage = _Service.Get(id);
 
             if (ModelState.IsValid)
             {
                 if (mesage != null)
                 {
-                    if (_Service.exist(value.llave) == true)
-                    {
-                        _Service.Update(llave, value);
-                        return Ok(_Service.Get(llave));
-                    }
-                    else { return Conflict(); }
+                    //if (_Service.exist(value.llave) == true)
+                    //{
+                        _Service.Update(id, value);
+                        return Ok(_Service.Get(id));
+                    //}
+                    //else { return Conflict(); }
 
                 }
                 else
