@@ -46,18 +46,18 @@ namespace API_PROYECTO.Models
         }
 
         public Conversaciones Get_(string user) =>
-          _message.Find<Conversaciones>(x => x.id == user).FirstOrDefault();
+          _message.Find<Conversaciones>(x => x.llave == user).FirstOrDefault();
 
 
 
         public void Update(string id, Conversaciones In) =>
-            _message.ReplaceOne(x => x.id == id, In);
+            _message.ReplaceOne(x => x.llave == id, In);
 
         public void Remove(Conversaciones In) =>
-            _message.DeleteOne(x => x.id == In.id);
+            _message.DeleteOne(x => x.llave == In.llave);
 
         public void Remove(string id) =>
-            _message.DeleteOne(x => x.id == id);
+            _message.DeleteOne(x => x.llave == id);
     }
 }
 

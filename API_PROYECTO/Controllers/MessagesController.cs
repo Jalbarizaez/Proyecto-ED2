@@ -27,10 +27,19 @@ namespace API_PROYECTO.Controllers
         }
 
         // GET: api/Messages/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{llave}", Name = "Get")]
+        public ActionResult Get(string llave)
         {
-            return "value";
+            if (ModelState.IsValid)
+            {
+                var info = _Service.Get_(llave);
+                if (info != null)
+                {
+                    return Ok(info);
+                }
+                else { return NotFound(); }
+            }
+            else { return BadRequest(); }
         }
 
         // POST: api/Messages
@@ -48,9 +57,9 @@ namespace API_PROYECTO.Controllers
 
         // PUT: api/Messages/5
         [HttpPut("{id}")]
-        public ActionResult Put(string id, [FromBody] Conversaciones value)
+        public ActionResult Put(string llave, [FromBody] Conversaciones value)
         {
-            var mesage = _Service.Get(id);
+            var mesage = _Service.Get(llave);
 
             if (ModelState.IsValid)
             {
@@ -58,8 +67,8 @@ namespace API_PROYECTO.Controllers
                 {
                     if (_Service.exist(value.llave) == true)
                     {
-                        _Service.Update(id, value);
-                        return Ok(_Service.Get(id));
+                        _Service.Update(llave, value);
+                        return Ok(_Service.Get(llave));
                     }
                     else { return Conflict(); }
 
@@ -72,12 +81,12 @@ namespace API_PROYECTO.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(string id)
+        public ActionResult Delete(string llave)
         {
-            var mesage = _Service.Get(id);
+            var mesage = _Service.Get(llave);
             if (mesage != null)
             {
-                _Service.Remove(id);
+                _Service.Remove(llave);
                 return Ok();
             }
             else
