@@ -145,6 +145,7 @@
     <Content Include="Content\PantallaDividida2.css" />
     <Content Include="Content\styleChat.css" />
     <Content Include="Content\PantallaDividida.css" />
+    <Content Include="Content\styleLeft.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

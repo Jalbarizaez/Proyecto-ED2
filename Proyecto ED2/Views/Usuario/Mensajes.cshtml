@@ -15,17 +15,17 @@
 	</script>
 }
 
-<head>
-	<link href="~/Content/styleChat.css" rel="stylesheet" />
-	<link href="~/Content/PantallaDividida2.css" rel="stylesheet" />
-</head>
+	<head>
+		<link href="~/Content/styleChat.css" rel="stylesheet" />
+		<link href="~/Content/PantallaDividida2.css" rel="stylesheet" />
+		<link href="~/Content/styleLeft.css" rel="stylesheet" />
+	</head>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li>@Html.ActionLink("Cerrar Sesion", "SignIn", "Home")</li>
-				<li>_@TempData["usuario"]</li>
+				<li>@Html.ActionLink("Cerrar Sesion", "LogIn", "Home")</li>
 			</ul>
 		</div>
 	</div>
@@ -35,68 +35,72 @@
 	<div class="col-md-6" no-gutters>
 		<div class="leftside" no-gutters>
 			<center>
-				<form method="post" enctype="multipart/form-data">
-					<br />
-					<h4>Enviar Archivo .txt</h4>
-					<input type="file" name="ArchivoEntrada" />
+				<div class="chatbox2">
+					<form method="post" enctype="multipart/form-data">
+						<h4>Enviar Archivo .txt</h4>
+						<input type="file" name="ArchivoEntrada" />
+						@{
+							if (TempData["friend"] != null)
+							{
+								<input type="hidden" name="receptor" value="@TempData["friend"]" />
+							}
+							else
+							{
+								<input type="hidden" name="receptor" value="█" />
+							}
+						}
+						<button type="submit">Enviar</button>
+					</form>
+					<h2>Archivos Recibidos:</h2>
 					@{
-						if (TempData["friend"] != null)
+						if (Model != null)
 						{
-							<input type="hidden" name="receptor" value="@TempData["friend"]" />
+							if (Model.Paths != null)
+							{
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="list-group">
+											@{
+												foreach (string path in Model.Paths)
+												{
+													<a href="#" class="list-group-item">
+														@Html.ActionLink("NOMBRE ARCHIVO", "DescargarArchivo", "Usuario", new { Path = path }, null)
+													</a>
+												}
+											}
+										</ul>
+									</div>
+								</div>
+							}
+							else
+							{
+								<h4>No tienes archivos por descargar</h4>
+							}
+						}
+					}
+					<h2>Usuario Registrados: </h2>
+					@{
+						if (Model.Usuarios != null)
+						{
+							<div class="row">
+								<div class="col-md-4">
+									<ul class="list-group">
+										@{
+											foreach (string usuariotxt in Model.Usuarios)
+											{
+												<a href="#" class="list-group-item">@usuariotxt</a>
+											}
+										}
+									</ul>
+								</div>
+							</div>
 						}
 						else
 						{
-							<input type="hidden" name="receptor" value="█" />
+							<h4>Aun no se han registrado mas usuarios</h4>
 						}
 					}
-					<button type="submit">Enviar</button>
-				</form>
-				<h2>Archivos Recibidos:</h2>
-				@{
-					if (Model.Paths != null)
-					{
-						<div class="row">
-							<div class="col-md-4">
-								<ul class="list-group">
-									@{
-										foreach (string path in Model.Paths)
-										{
-											<a href="#" class="list-group-item">
-												@Html.ActionLink("NOMBRE ARCHIVO", "DescargarArchivo", "Usuario", new { Path = path }, null)
-											</a>
-										}
-									}
-								</ul>
-							</div>
-						</div>
-					}
-					else
-					{
-						<h4>No tienes archivos por descargar</h4>
-					}
-				}
-				<h2>Usuario Registrados: </h2>
-				@{
-					if (Model.Usuarios != null)
-					{
-						<div class="row">
-							<div class="col-md-4">
-								<ul class="list-group">
-									@{
-										foreach (string usuariotxt in Model.Usuarios)
-										{
-											<a href="#" class="list-group-item">@usuariotxt</a>
-										}
-									}
-								</ul>
-							</div>
-						</div>
-					}
-					else
-					{
-						<h4>Aun no se han registrado mas usuarios</h4>
-					}
-				}
+				</div>
 			</center>
 		</div>
 	</div>

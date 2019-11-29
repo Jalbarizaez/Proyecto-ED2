@@ -11,8 +11,8 @@
 	height: 650px;
 	background: #fff;
 	padding: 25px;
-	margin: 10px auto;
-	border-radius: 2px;
+	margin: 20px auto;
+	border-radius: 3px;
 }
 
 .chatlogs {
@@ -31,31 +31,31 @@
 		border-radius: 5px;
 		background: rgba(0,0,0,.1);
 	}
+/*Tocar aca el height para ver si cmabia la distanvia de boton con el margen*/
 
 .chat {
-	display:flex;
+	display: flex;
 	flex-flow: row wrap;
-	align-items: flex-start;
-	margin-bottom: 10px;
+	align-items:flex-start;
+	margin-bottom: 10px; /*Tambien esta probar*/
 }
 
 	.chat .user-photo {
-		width: 60px;
-		height: 60px;
+		width:60px;
+		height:60px;
 		background: #ccc;
 		border-radius: 50%;
-		overflow: hidden;
+		overflow:hidden;
 	}
 
-	.chat .user-photo img {
-		width: 100%;
-	}
+		.chat .user-photo img {
+			width: 100%;
+		}
 
-	.chat .chat-message {
-		width: 80%;
+	.chat .chat-message{
+		width:80%;
 		padding: 15px;
 		margin: 5px 10px 0;
-		background: #f1802f;
 		border-radius: 10px;
 		color: #fff;
 		font-size: 18px;
