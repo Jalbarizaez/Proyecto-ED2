@@ -16,15 +16,18 @@ namespace Proyecto_ED2.Controllers
         }
 
 		[HttpGet]
-		public ActionResult Mensajes()
+		public ActionResult Mensajes(string emisor)
 		{
+			TempData["usuario"] = emisor;
 			return View();
 		}
 		[HttpPost]
-		public ActionResult Mensajes(string emisor, string receptor, string mensaje) // string emisor, string receptor, string mensaje
+		public ActionResult Mensajes(string emisor, string receptor, string mensaje) //JsonResult
 		{
 			try
 			{
+				TempData["usuario"] = emisor;
+				TempData["friend"] = receptor;
 				if (emisor != "" && receptor != "")
 				{
 					//PUT para iniciar las conversaciones y que devuelva un Json tipo Conversacion
