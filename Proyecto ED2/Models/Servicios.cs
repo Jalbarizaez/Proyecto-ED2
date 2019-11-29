@@ -101,5 +101,12 @@ namespace Proyecto_ED2.Models
 			}
 			return Resultado;
 		}
+
+		public string ObtenerNombre(string url)
+		{
+			string[] urls = url.Split('\\');
+
+			return "";
+		}
 	}
 }

@@ -15,5 +15,6 @@ namespace API_PROYECTO.Models
         public string llave { get; set; }
         public List<Messages> recibidos { get; set; }
         public List<Messages> enviados { get; set; }
+		public List<string> paths { get; set; }
     }
 }

@@ -1,0 +1,11 @@
+﻿.leftside {
+	height: 15vh;
+	width: 100%;
+	background: blue;
+}
+
+.rightside {
+	height: 85vh;
+	width: 100%;
+	background: yellow;
+}

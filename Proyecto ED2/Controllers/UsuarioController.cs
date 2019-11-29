@@ -25,14 +25,26 @@ namespace Proyecto_ED2.Controllers
         }
 
 		[HttpGet]
-		public ActionResult Mensajes(string emisor)
+		public async Task<ActionResult> Mensajes(string emisor)
 		{
 			if (emisor == null) { }
 			else if (emisor == "") { }
 			else {
 				TempData["usuario"] = emisor;
 			}
-			return View();
+
+			ListasVista H = new ListasVista();
+			string urlGET = urlApi + "api/Users";
+			var clienteGET = new HttpClient();
+			var jsonGET = await clienteGET.GetStringAsync(urlGET);
+			var usuarios = JsonConvert.DeserializeObject<List<lista>>(jsonGET);
+			List<string> Aux = new List<string>();
+			foreach (lista x in usuarios)
+			{
+				Aux.Add(x.user);
+			}
+			H.Usuarios = Aux;
+			return View(H);
 		}
 		[HttpPost]
 		public async Task<ActionResult> Mensajes(string emisor, string receptor, string mensaje) //JsonResult
@@ -52,9 +64,21 @@ namespace Proyecto_ED2.Controllers
 						var json = await cliente.GetStringAsync(urlMensaje); //En esta linea da error
 						var conversacionRecibida = JsonConvert.DeserializeObject<Conversacion>(json);
 
+						string urlGET = urlApi + "api/Users";
+						var clienteGET = new HttpClient();
+						var jsonGET = await clienteGET.GetStringAsync(urlGET);
+						var usuarios = JsonConvert.DeserializeObject<List<lista>>(jsonGET);
+						List<string> Aux = new List<string>();
+						foreach (lista x in usuarios)
+						{
+							Aux.Add(x.user);
+						}
+
 						Messages MensajePUT = new Messages();
 						MensajePUT.fecha = DateTime.Now;
 						MensajePUT.mensage = mensaje;
+
+						ListasVista Listas = new ListasVista();
 
 						using (var clientePUT = new HttpClient())
 						{
@@ -63,9 +87,10 @@ namespace Proyecto_ED2.Controllers
 							ConversacionPUT.llave = llave;
 							ConversacionPUT.id = conversacionRecibida.id;
 							ConversacionPUT.recibidos = conversacionRecibida.recibidos;
-
+							ConversacionPUT.paths = conversacionRecibida.paths;
 							List<Messages> Enviados = conversacionRecibida.enviados;
 							Enviados.Add(MensajePUT);
+							Listas.Paths = conversacionRecibida.paths;
 
 							ConversacionPUT.enviados = Enviados;
 							string urlPUT = urlApi + "api/Messages/" + llave;
@@ -85,10 +110,10 @@ namespace Proyecto_ED2.Controllers
 							ConversacionPUT.llave = llave2;
 							ConversacionPUT.id = conversacionRecibida2.id;
 							ConversacionPUT.enviados = conversacionRecibida2.enviados;
-
+							ConversacionPUT.paths = conversacionRecibida2.paths;
 							List<Messages> Recibidos = conversacionRecibida2.recibidos;
 							Recibidos.Add(MensajePUT);
-				
+
 							ConversacionPUT.recibidos = Recibidos;
 							string urlPUT = urlApi + "api/Messages/" + llave;
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
@@ -99,7 +124,12 @@ namespace Proyecto_ED2.Controllers
 						Enviados2.Add(MensajePUT);
 						conversacionRecibida.enviados = Enviados2;
 						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida);
-						return View(ConversacionFiltrada);
+
+						
+						Listas.Mensajes = ConversacionFiltrada;
+						Listas.Usuarios = Aux;
+
+						return View(Listas);
 					}
 					catch
 					{
@@ -147,6 +177,16 @@ namespace Proyecto_ED2.Controllers
 							}
 						}
 
+						string urlGET = urlApi + "api/Users";
+						var clienteGET = new HttpClient();
+						var jsonGET = await clienteGET.GetStringAsync(urlGET);
+						var usuarios = JsonConvert.DeserializeObject<List<lista>>(jsonGET);
+						List<string> Aux = new List<string>();
+						foreach (lista x in usuarios)
+						{
+							Aux.Add(x.user);
+						}
+
 						Conversacion ConversacionSinFiltro = new Conversacion();
 						Messages Mensaje1 = new Messages();
 						Mensaje1.fecha = DateTime.Now;
@@ -157,7 +197,12 @@ namespace Proyecto_ED2.Controllers
 						ConversacionSinFiltro.enviados = M2;
 
 						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(ConversacionSinFiltro);
-						return View(ConversacionFiltrada);
+						ListasVista Listas = new ListasVista();
+						Listas.Mensajes = ConversacionFiltrada;
+						Listas.Usuarios = Aux;
+						Listas.Paths = null;
+
+						return View(Listas);
 					}
 				}
 				else if (receptor != "") //Se esta buscando la conversacion con un Usuario en especial
@@ -170,6 +215,21 @@ namespace Proyecto_ED2.Controllers
 						var json = await cliente.GetStringAsync(urlMensaje); //En esta linea da error
 						var conversacionRecibida = JsonConvert.DeserializeObject<Conversacion>(json);
 						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida);
+						ListasVista Listas = new ListasVista();
+
+						string urlGET = urlApi + "api/Users";
+						var clienteGET = new HttpClient();
+						var jsonGET = await clienteGET.GetStringAsync(urlGET);
+						var usuarios = JsonConvert.DeserializeObject<List<lista>>(jsonGET);
+						List<string> Aux = new List<string>();
+						foreach (lista x in usuarios)
+						{
+							Aux.Add(x.user);
+						}
+
+						Listas.Mensajes = ConversacionFiltrada;
+						Listas.Usuarios = Aux;
+						Listas.Paths = conversacionRecibida.paths;
 						return View(ConversacionFiltrada);
 					}
 					catch
@@ -182,7 +242,8 @@ namespace Proyecto_ED2.Controllers
 				else //Todos lo parametros son nulos
 				{
 					TempData["friend"] = null;
-					TempData["msms"] = "Debe llenar al menos un campo";
+					TempData["msm" +
+						""] = "Debe llenar al menos un campo";
 					return View();
 				}
 			}
@@ -190,8 +251,14 @@ namespace Proyecto_ED2.Controllers
 			{
 				@TempData["msm"] = "Ha ocurrido un error";
 			}
-
 			return View();
+		}
+
+		//ActionLink
+		public ActionResult DescargarArchivo(string Path)
+		{
+			string nombre = Q.ObtenerNombre(Path);
+			return File(Path, "txt", (nombre + ".txt"));
 		}
 	}
 }

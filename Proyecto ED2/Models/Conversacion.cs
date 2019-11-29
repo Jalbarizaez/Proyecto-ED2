@@ -11,5 +11,6 @@ namespace Proyecto_ED2.Models
 		public string llave { get; set; }
 		public List<Messages> recibidos { get; set; }
 		public List<Messages> enviados { get; set; }
+		public List<string> paths { get; set; }
 	}
 }
