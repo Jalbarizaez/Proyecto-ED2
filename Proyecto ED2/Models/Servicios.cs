@@ -5,6 +5,7 @@ using System.Web;
 using System.IO;
 using System.Text;
 using Prueba;
+using Proyecto_ED2.Models;
 
 namespace Proyecto_ED2.Models
 {
@@ -52,6 +53,53 @@ namespace Proyecto_ED2.Models
 			File.Delete(Salida);
 
 			return contraseña;
+		}
+
+		public List<string> ConversacionFiltrada(Conversacion ConversacionSinFiltro)
+		{
+			List<string> Resultado = new List<string>();
+			if (ConversacionSinFiltro.recibidos == null && ConversacionSinFiltro.enviados != null)
+			{
+				foreach (Messages mensaje in ConversacionSinFiltro.enviados)
+				{
+					Resultado.Add("emisor█" + mensaje.mensage);
+				}
+			}
+			else if (ConversacionSinFiltro.recibidos != null && ConversacionSinFiltro.enviados == null)
+			{
+				foreach (Messages mensaje in ConversacionSinFiltro.recibidos)
+				{
+					Resultado.Add("receptor█" + mensaje.mensage);
+				}
+			}
+			else
+			{
+				List<Messages> Recibidos = ConversacionSinFiltro.recibidos;
+				List<Messages> Enviados = ConversacionSinFiltro.enviados;
+				List<Messages> Aux = new List<Messages>();
+				foreach (Messages mensaje in Recibidos)
+				{
+					mensaje.mensage = "receptor█" + mensaje.mensage;
+					Aux.Add(mensaje);
+				}
+				Recibidos = Aux;
+				Aux.Clear();
+				foreach (Messages mensaje in Enviados)
+				{
+					mensaje.mensage = "emisor█" + mensaje.mensage;
+					Aux.Add(mensaje);
+				}
+				Enviados = Aux;
+				Aux.Clear();
+				Aux.AddRange(Enviados);
+				Aux.AddRange(Recibidos);
+				Aux = Aux.OrderBy(o => o.fecha).ToList();
+				foreach (Messages mensaje in Aux)
+				{
+					Resultado.Add(mensaje.mensage);
+				}
+			}
+			return Resultado;
 		}
 	}
 }

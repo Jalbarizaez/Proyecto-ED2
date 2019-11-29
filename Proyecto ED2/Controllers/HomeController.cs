@@ -17,9 +17,10 @@ namespace Proyecto_ED2.Controllers
     {
 		private const string urlApi = "https://localhost:44389/";
 		Servicios Q = new Servicios();
+
 		public ActionResult Index()
         {
-			string pathCarpeta2 = Path.Combine(Server.MapPath("~/"), "ArchivosTmp");
+			string pathCarpeta2 = Path.Combine(Server.MapPath("~/"), "Archivos");
 			Directory.CreateDirectory(pathCarpeta2);
 
 			return RedirectToAction("LogIn");
@@ -54,32 +55,41 @@ namespace Proyecto_ED2.Controllers
 				string path = Server.MapPath("~/Archivos/");
 				var cliente = new HttpClient();
 				string usuario = urlApi + "api/Users/" + user;
+
 				var json = await cliente.GetStringAsync(usuario);
 				var Usuario = JsonConvert.DeserializeObject<User>(json);
 
-                if (Usuario.contraseña == Q.Cifrar(password, user, path))
+				if (Usuario != null)
 				{
-                    var client = new HttpClient();
-					client.BaseAddress = new Uri(urlApi);
-					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-					var jsonWebToken = await client.PostAsync("api/JWT", new StringContent(
-							new JavaScriptSerializer().Serialize(Usuario), Encoding.UTF8, "application/json"));
-
-					if (jsonWebToken.IsSuccessStatusCode)
+					if (Usuario.contraseña == Q.Cifrar(password, user, path))
 					{
-						TempData["msm"] = "Bienvenido " + Usuario.nombre + " " + Usuario.apellido;
-						TempData["usuario"] = user;
-						return RedirectToAction("Mensajes", "Usuario", user);
+						var client = new HttpClient();
+						client.BaseAddress = new Uri(urlApi);
+						client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+						var jsonWebToken = await client.PostAsync("api/JWT", new StringContent(
+								new JavaScriptSerializer().Serialize(Usuario), Encoding.UTF8, "application/json"));
+
+						if (jsonWebToken.IsSuccessStatusCode)
+						{
+							TempData["msm"] = "Bienvenido " + Usuario.nombre + " " + Usuario.apellido;
+							TempData["usuario"] = user;
+							return RedirectToAction("Mensajes", "Usuario");
+						}
+						else
+						{
+							TempData["msm"] = "Ha sucedido un error";
+							return View();
+						}
 					}
 					else
 					{
-						TempData["msm"] = "Ha sucedido un error";
+						TempData["msm"] = "Usuario o Contraseña incorecta";
 						return View();
 					}
 				}
 				else
 				{
-					TempData["msm"] = "Usuario y/o Contraseña incorecta";
+					TempData["msm"] = "Usuario o Contraseña incorecta";
 					return View();
 				}
 			}

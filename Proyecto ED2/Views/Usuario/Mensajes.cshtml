@@ -1,4 +1,4 @@
-﻿@model IList<string>
+﻿@model List<string>
 @{
 	ViewBag.Title = "Mensajes";
 	bool S = false;
@@ -14,6 +14,7 @@
        alert("@TempData["msm"]");
 	</script>
 }
+
 <head>
 	<link href="~/Content/styleChat.css" rel="stylesheet" />
 </head>
@@ -49,14 +50,25 @@
 			@{
 				if (S)
 				{
-					<div class="chat friend">
-						<div class="user-photo"><img src="~/Archivos/Default.png" /></div>
-						<p class="chat-message"> Receptor</p>
-					</div>
-					<div class="chat self">
-						<div class="user-photo"><img src="~/Archivos/Default2.png" /></div>
-						<p class="chat-message">Emisor</p>
-					</div>
+					foreach (string linea in Model)
+					{
+						string[] partes = linea.Split('█');
+						if (partes[0] == "receptor")
+						{
+							<div class="chat friend">
+								<div class="user-photo"><img src="~/Archivos/Default.png" /></div>
+								<p align="left" class="chat-message"> @partes[1]</p>
+							</div>
+						}
+						if (partes[0] == "emisor")
+						{
+							<div class="chat self">
+								<div class="user-photo"><img src="~/Archivos/Default2.png" /></div>
+								<label>Tu</label>
+								<p align="right" class="chat-message">@partes[1]</p>
+							</div>
+						}
+					}
 				}
 				else
 				{
@@ -68,13 +80,8 @@
 			}
 		</div>
 		<div class="chat-form">
-<<<<<<< HEAD
-			<input class="form-control" name="mensaje" type="text" style="width:80%"  id="mensajetxt"/>
-			@*<button onclick="@Html.RenderAction("Usuario", "Mensajes", (Model.emisor, Model.receptor))">Enviar</button>*@
-=======
-			<input name="mensaje" type="text">
+			<input name="mensaje" type="text" >
 			<button>Enviar</button>
->>>>>>> e27d4a852232a20c6227ba5b3de34e2c628d82bb
 		</div>
 	</div>
 </form>
