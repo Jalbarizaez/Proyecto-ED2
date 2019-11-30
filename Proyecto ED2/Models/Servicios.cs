@@ -154,10 +154,8 @@ namespace Proyecto_ED2.Models
 		public void Descomprimir(string Entrada, string Salida)
 		{
 			ServiciosDLL.DescomprimirHuff H = new ServiciosDLL.DescomprimirHuff();
-			if (File.Exists(Salida))
-			{
-				File.Delete(Salida);
-			}
+			//string[] urlSalida = Salida.Split('.');
+			Salida = Salida + "2";
 			H.Descompresion(Entrada, Salida);
 		}
 	}

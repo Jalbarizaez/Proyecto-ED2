@@ -345,9 +345,9 @@ namespace Proyecto_ED2.Controllers
 							{
 								string[] nombreArchivo = ArchivoEntrada.FileName.Split('.');
 								string path = Server.MapPath("~/ArchivosTmp/");
-								path = path + ArchivoEntrada.FileName;
+								path = path + nombreArchivo[0] + ".txt";
 								ArchivoEntrada.SaveAs(path);
-								Q.Comprimir(path, (path + nombreArchivo[0] + ".huff"));
+								Q.Comprimir(path, (path + nombreArchivo[0]));
 
 								var cliente = new HttpClient();
 								string llave = receptor + "-" + emisor;
@@ -365,7 +365,8 @@ namespace Proyecto_ED2.Controllers
 									{
 										PPP = new List<string>();
 									}
-									PPP.Add((path + nombreArchivo[0] + ".huff"));
+									//string[] ww = path.Split('.');
+									PPP.Add((path + nombreArchivo[0]));
 									ConversacionPUT.paths = PPP;
 
 									string urlPUT = urlApi + "api/Messages/" + conversacionRecibida.id;
@@ -399,6 +400,8 @@ namespace Proyecto_ED2.Controllers
 		//ActionLink
 		public ActionResult DescargarArchivo(string Path)
 		{
+			Q.Descomprimir(Path,Path);
+			Path = Path + "2";
 			return File(Path, "txt", ("ArchivoChat.txt"));
 		}
 	}
