@@ -47,7 +47,7 @@ namespace Proyecto_ED2.Controllers
 			return View(H);
 		}
 		[HttpPost]
-		public async Task<ActionResult> Mensajes(string emisor, string receptor, string mensaje) //JsonResult
+		public async Task<ActionResult> Mensajes(string emisor, string receptor, string mensaje)
 		{
 			try
 			{
@@ -73,9 +73,10 @@ namespace Proyecto_ED2.Controllers
 						{
 							Aux.Add(x.user);
 						}
-
+						string path = Server.MapPath("~/Archivos/");
 						Messages MensajePUT = new Messages();
 						MensajePUT.fecha = DateTime.Now;
+						mensaje = Q.Cifrar(mensaje, emisor, path);
 						MensajePUT.mensage = mensaje;
 
 						ListasVista Listas = new ListasVista();
@@ -120,6 +121,10 @@ namespace Proyecto_ED2.Controllers
 							{
 								Recibidos = new List<Messages>();
 							}
+
+							string path2 = Server.MapPath("~/Archivos/");
+							var mensaje2 = Q.Cifrar(mensaje, receptor, path);
+							MensajePUT.mensage = mensaje2;
 							Recibidos.Add(MensajePUT);
 
                             
@@ -128,8 +133,8 @@ namespace Proyecto_ED2.Controllers
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
 								new JavaScriptSerializer().Serialize(ConversacionPUT), Encoding.UTF8, "application/json"));
 						}
-
-						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida);
+						string path3 = Server.MapPath("~/Archivos/");
+						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida, emisor, path3, receptor);
 						Listas.Mensajes = ConversacionFiltrada;
 						Listas.Usuarios = Aux;
 
@@ -144,6 +149,8 @@ namespace Proyecto_ED2.Controllers
 							Conversacion ConversacionPOST = new Conversacion();
 							Messages MensajePOST = new Messages();
 							MensajePOST.fecha = DateTime.Now;
+							string path = Server.MapPath("~/Archivos/");
+							mensaje = Q.Cifrar(mensaje, emisor, path);
 							MensajePOST.mensage = mensaje;
 							ConversacionPOST.llave = emisor + "-" + receptor;
 							List<Messages> M = new List<Messages>();
@@ -165,6 +172,9 @@ namespace Proyecto_ED2.Controllers
 							Conversacion ConversacionPOST = new Conversacion();
 							Messages MensajePOST = new Messages();
 							MensajePOST.fecha = DateTime.Now;
+							string path = Server.MapPath("~/Archivos/");
+
+							mensaje = Q.Cifrar(mensaje, receptor, path);
 							MensajePOST.mensage = mensaje;
 							ConversacionPOST.llave = receptor + "-" + emisor;
 							List<Messages> M = new List<Messages>();
@@ -200,7 +210,8 @@ namespace Proyecto_ED2.Controllers
 						M2.Add(Mensaje1);
 						ConversacionSinFiltro.enviados = M2;
 
-						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(ConversacionSinFiltro);
+						string path2 = Server.MapPath("~/Archivos/");
+						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(ConversacionSinFiltro, emisor, path2, receptor);
 						ListasVista Listas = new ListasVista();
 						Listas.Mensajes = ConversacionFiltrada;
 						Listas.Usuarios = Aux;
@@ -218,7 +229,8 @@ namespace Proyecto_ED2.Controllers
 						string urlMensaje = urlApi + "api/Messages/" + llave;
 						var json = await cliente.GetStringAsync(urlMensaje); //En esta linea da error
 						var conversacionRecibida = JsonConvert.DeserializeObject<Conversacion>(json);
-						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida);
+						string path2 = Server.MapPath("~/Archivos/");
+						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida, emisor, path2, receptor);
 						ListasVista Listas = new ListasVista();
 
 						string urlGET = urlApi + "api/Users";

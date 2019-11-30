@@ -55,13 +55,58 @@ namespace Proyecto_ED2.Models
 			return contraseña;
 		}
 
-		public List<string> ConversacionFiltrada(Conversacion ConversacionSinFiltro)
+		public string Decifrar(string contraseña, string usuario, string pathSDES)
+		{
+			string Entrada = pathSDES + "Entrada.txt";
+			string Salida = pathSDES + "Salida.txt";
+			string SDEStxt = pathSDES + "S-DES.txt";
+
+			using (StreamWriter writer = File.CreateText(Entrada)) { writer.Write(contraseña); }
+			using (StreamWriter writer = File.CreateText(Salida)) { writer.Write(""); }
+
+			ServiciosDLL H = new ServiciosDLL();
+			ServiciosDLL.SDES Q = new ServiciosDLL.SDES();
+
+			int hash = H.Hash(usuario);
+			var bytes = Convert.ToString(hash, 2);
+			char[] bytesC = bytes.ToCharArray();
+			if (bytesC.Length < 10)
+			{
+				List<char> ListaBytes = new List<char>();
+				ListaBytes.AddRange(bytesC);
+				while (ListaBytes.Count() < 10)
+				{
+					ListaBytes.Add('0');
+				}
+				bytesC = ListaBytes.ToArray();
+			}
+			if (bytesC.Length > 10)
+			{
+				Array.Resize(ref bytesC, 10);
+			}
+			usuario = "";
+			foreach (var item in bytesC)
+			{
+				usuario += item.ToString();
+			}
+
+			Q.Descifrado(usuario, SDEStxt, Salida, Entrada);
+			contraseña = File.ReadAllText(Salida, Encoding.UTF8);
+
+			File.Delete(Entrada);
+			File.Delete(Salida);
+
+			return contraseña;
+		}
+
+		public List<string> ConversacionFiltrada(Conversacion ConversacionSinFiltro, string usuario, string pathSDES, string receptor)
 		{
 			List<string> Resultado = new List<string>();
 			if (ConversacionSinFiltro.recibidos == null && ConversacionSinFiltro.enviados != null)
 			{
 				foreach (Messages mensaje in ConversacionSinFiltro.enviados)
 				{
+					mensaje.mensage = Decifrar(mensaje.mensage, usuario, pathSDES);
 					Resultado.Add("emisor█" + mensaje.mensage);
 				}
 			}
@@ -69,6 +114,7 @@ namespace Proyecto_ED2.Models
 			{
 				foreach (Messages mensaje in ConversacionSinFiltro.recibidos)
 				{
+					mensaje.mensage = Decifrar(mensaje.mensage, receptor, pathSDES);
 					Resultado.Add("receptor█" + mensaje.mensage);
 				}
 			}
@@ -79,11 +125,13 @@ namespace Proyecto_ED2.Models
 				List<Messages> Aux = new List<Messages>();
 				foreach (Messages mensaje in Recibidos)
 				{
+					mensaje.mensage = Decifrar(mensaje.mensage, receptor, pathSDES);
 					mensaje.mensage = "receptor█" + mensaje.mensage;
 					Aux.Add(mensaje);
 				}
 				foreach (Messages mensaje in Enviados)
 				{
+					mensaje.mensage = Decifrar(mensaje.mensage, usuario, pathSDES);
 					mensaje.mensage = "emisor█" + mensaje.mensage;
 					Aux.Add(mensaje);
 				}
