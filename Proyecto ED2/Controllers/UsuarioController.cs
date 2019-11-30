@@ -265,9 +265,8 @@ namespace Proyecto_ED2.Controllers
 				X.Mensajes = new List<string>();
 				X.Paths = new List<string>();
 				X.Usuarios = new List<string>();
+				return View(X);
 			}
-			
-			return View(X);
 		}
 
 		//ActionLink
