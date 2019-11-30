@@ -82,17 +82,11 @@ namespace Proyecto_ED2.Models
 					mensaje.mensage = "receptor█" + mensaje.mensage;
 					Aux.Add(mensaje);
 				}
-				Recibidos = Aux;
-				Aux.Clear();
 				foreach (Messages mensaje in Enviados)
 				{
 					mensaje.mensage = "emisor█" + mensaje.mensage;
 					Aux.Add(mensaje);
 				}
-				Enviados = Aux;
-				Aux.Clear();
-				Aux.AddRange(Enviados);
-				Aux.AddRange(Recibidos);
 				Aux = Aux.OrderBy(o => o.fecha).ToList();
 				foreach (Messages mensaje in Aux)
 				{

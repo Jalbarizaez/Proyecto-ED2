@@ -89,11 +89,15 @@ namespace Proyecto_ED2.Controllers
 							ConversacionPUT.recibidos = conversacionRecibida.recibidos;
 							ConversacionPUT.paths = conversacionRecibida.paths;
 							List<Messages> Enviados = conversacionRecibida.enviados;
+							if (Enviados == null)
+							{
+								Enviados = new List<Messages>();
+							}
 							Enviados.Add(MensajePUT);
 							Listas.Paths = conversacionRecibida.paths;
 
 							ConversacionPUT.enviados = Enviados;
-							string urlPUT = urlApi + "api/Messages/" + llave;
+							string urlPUT = urlApi + "api/Messages/" + conversacionRecibida.id;
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
 								new JavaScriptSerializer().Serialize(ConversacionPUT), Encoding.UTF8, "application/json"));
 						}
@@ -112,21 +116,20 @@ namespace Proyecto_ED2.Controllers
                             ConversacionPUT.enviados = conversacionRecibida2.enviados;
                             ConversacionPUT.paths = conversacionRecibida2.paths;
                             List<Messages> Recibidos = conversacionRecibida2.recibidos;
+							if (Recibidos == null)
+							{
+								Recibidos = new List<Messages>();
+							}
 							Recibidos.Add(MensajePUT);
 
                             
 							ConversacionPUT.recibidos = Recibidos;
-							string urlPUT = urlApi + "api/Messages/" + llave;
+							string urlPUT = urlApi + "api/Messages/" + conversacionRecibida2.id;
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
 								new JavaScriptSerializer().Serialize(ConversacionPUT), Encoding.UTF8, "application/json"));
 						}
 
-						List<Messages> Enviados2 = conversacionRecibida.enviados;
-						Enviados2.Add(MensajePUT);
-						conversacionRecibida.enviados = Enviados2;
 						List<string> ConversacionFiltrada = Q.ConversacionFiltrada(conversacionRecibida);
-
-						
 						Listas.Mensajes = ConversacionFiltrada;
 						Listas.Usuarios = Aux;
 
@@ -231,28 +234,39 @@ namespace Proyecto_ED2.Controllers
 						Listas.Mensajes = ConversacionFiltrada;
 						Listas.Usuarios = Aux;
 						Listas.Paths = conversacionRecibida.paths;
-						return View(ConversacionFiltrada);
+						return View(Listas);
 					}
 					catch
 					{
 						TempData["msm"] = "Usuario inexistente en el sistema";
 						TempData["friend"] = null;
-						return View();
+						ListasVista X = new ListasVista();
+						X.Mensajes = new List<string>();
+						X.Paths = new List<string>();
+						X.Usuarios = new List<string>();
+						return View(X);
 					}
 				}
 				else //Todos lo parametros son nulos
 				{
 					TempData["friend"] = null;
-					TempData["msm" +
-						""] = "Debe llenar al menos un campo";
-					return View();
+					TempData["msm"] = "Debe llenar al menos un campo";
+					ListasVista X = new ListasVista();
+					X.Mensajes = new List<string>();
+					X.Paths = new List<string>();
+					X.Usuarios = new List<string>();
+					return View(X);
 				}
 			}
 			catch
 			{
 				@TempData["msm"] = "Ha ocurrido un error";
+				ListasVista X = new ListasVista();
+				X.Mensajes = new List<string>();
+				X.Paths = new List<string>();
+				X.Usuarios = new List<string>();
+				return View(X);
 			}
-			return View();
 		}
 
 		//ActionLink
