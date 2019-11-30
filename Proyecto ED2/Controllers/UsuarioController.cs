@@ -118,7 +118,7 @@ namespace Proyecto_ED2.Controllers
 							ConversacionPUT.recibidos = Recibidos;
 							string urlPUT = urlApi + "api/Messages/" + llave;
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
-								new JavaScriptSerializer().Serialize(conversacionRecibida2), Encoding.UTF8, "application/json"));
+								new JavaScriptSerializer().Serialize(ConversacionPUT), Encoding.UTF8, "application/json"));
 						}
 
 						List<Messages> Enviados2 = conversacionRecibida.enviados;
