@@ -47,7 +47,55 @@ namespace Proyecto_ED2.Controllers
 		{
 			return View();
 		}
-		[HttpPost]
+        [HttpGet]
+        public ActionResult Delete()
+        {
+           
+            return View();
+        }
+        [HttpPost]
+        public async Task<ActionResult> Delete(string user, string password)
+        {
+            try
+            {
+                string path = Server.MapPath("~/Archivos/");
+                var cliente = new HttpClient();
+                string usuario = urlApi + "api/Users/" + user;
+
+                var json = await cliente.GetStringAsync(usuario);
+                var Usuario = JsonConvert.DeserializeObject<User>(json);
+
+                if (Usuario != null)
+                {
+                    if (Usuario.contraseña == Q.Cifrar(password, user, path))
+                    {
+                        var client = new HttpClient();
+
+
+                        var response = await client.DeleteAsync(urlApi + "api/Users/" + Usuario.id);
+                        TempData["msm"] = "Usuario eliminado";
+                           return RedirectToAction("LogIn", "Home");
+
+                    }
+                    else
+                    {
+                        TempData["msm"] = "Usuario o Contraseña incorecta";
+                        return View();
+                    }
+                }
+                else
+                {
+                    TempData["msm"] = "Usuario o Contraseña incorecta";
+                    return View();
+                }
+            }
+            catch
+            {
+                TempData["msm"] = "Ha sucedido un error";
+                return View();
+            }
+        }
+        [HttpPost]
 		public async Task<ActionResult> LogIn(string user, string password)
 		{
 			try
@@ -64,6 +112,7 @@ namespace Proyecto_ED2.Controllers
 					if (Usuario.contraseña == Q.Cifrar(password, user, path))
 					{
 						var client = new HttpClient();
+
 						client.BaseAddress = new Uri(urlApi);
 						client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 						var jsonWebToken = await client.PostAsync("api/JWT", new StringContent(
