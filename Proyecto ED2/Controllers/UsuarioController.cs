@@ -240,22 +240,34 @@ namespace Proyecto_ED2.Controllers
 					{
 						TempData["msm"] = "Usuario inexistente en el sistema";
 						TempData["friend"] = null;
-						return View();
+						ListasVista X = new ListasVista();
+						X.Mensajes = new List<string>();
+						X.Paths = new List<string>();
+						X.Usuarios = new List<string>();
+						return View(X);
 					}
 				}
 				else //Todos lo parametros son nulos
 				{
 					TempData["friend"] = null;
-					TempData["msm" +
-						""] = "Debe llenar al menos un campo";
-					return View();
+					TempData["msm"] = "Debe llenar al menos un campo";
+					ListasVista X = new ListasVista();
+					X.Mensajes = new List<string>();
+					X.Paths = new List<string>();
+					X.Usuarios = new List<string>();
+					return View(X);
 				}
 			}
 			catch
 			{
 				@TempData["msm"] = "Ha ocurrido un error";
+				ListasVista X = new ListasVista();
+				X.Mensajes = new List<string>();
+				X.Paths = new List<string>();
+				X.Usuarios = new List<string>();
 			}
-			return View();
+			
+			return View(X);
 		}
 
 		//ActionLink
