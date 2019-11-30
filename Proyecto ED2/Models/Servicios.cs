@@ -22,6 +22,7 @@ namespace Proyecto_ED2.Models
 
 			ServiciosDLL H = new ServiciosDLL();
 			ServiciosDLL.SDES Q = new ServiciosDLL.SDES();
+			ServiciosDLL.ZigZag Z = new ServiciosDLL.ZigZag();
 
 			int hash = H.Hash(usuario);
 			var bytes = Convert.ToString(hash, 2);
@@ -45,8 +46,9 @@ namespace Proyecto_ED2.Models
 			{
 				usuario += item.ToString();
 			}
-
-			Q.Cifrado(usuario, SDEStxt, Salida, Entrada);
+			usuario = "1110011100";
+			//Q.Cifrado(usuario, SDEStxt, Salida, Entrada);
+			Z.Codificar(Entrada, Salida, 3);
 			contraseña = File.ReadAllText(Salida, Encoding.UTF8);
 
 			File.Delete(Entrada);
@@ -66,6 +68,7 @@ namespace Proyecto_ED2.Models
 
 			ServiciosDLL H = new ServiciosDLL();
 			ServiciosDLL.SDES Q = new ServiciosDLL.SDES();
+			ServiciosDLL.ZigZag Z = new ServiciosDLL.ZigZag();
 
 			int hash = H.Hash(usuario);
 			var bytes = Convert.ToString(hash, 2);
@@ -89,8 +92,9 @@ namespace Proyecto_ED2.Models
 			{
 				usuario += item.ToString();
 			}
-
-			Q.Descifrado(usuario, SDEStxt, Salida, Entrada);
+			usuario = "1110011100";
+			//Q.Descifrado(usuario, SDEStxt, Salida, Entrada);
+			Z.Decodificar(Entrada, Salida, 3);
 			contraseña = File.ReadAllText(Salida, Encoding.UTF8);
 
 			File.Delete(Entrada);

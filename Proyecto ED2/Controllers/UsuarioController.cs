@@ -63,7 +63,6 @@ namespace Proyecto_ED2.Controllers
 					{
 						var json = await cliente.GetStringAsync(urlMensaje); //En esta linea da error
 						var conversacionRecibida = JsonConvert.DeserializeObject<Conversacion>(json);
-
 						string urlGET = urlApi + "api/Users";
 						var clienteGET = new HttpClient();
 						var jsonGET = await clienteGET.GetStringAsync(urlGET);
@@ -76,8 +75,8 @@ namespace Proyecto_ED2.Controllers
 						string path = Server.MapPath("~/Archivos/");
 						Messages MensajePUT = new Messages();
 						MensajePUT.fecha = DateTime.Now;
-						mensaje = Q.Cifrar(mensaje, emisor, path);
-						MensajePUT.mensage = mensaje;
+						MensajePUT.mensage = Q.Cifrar(mensaje, emisor, path);
+						//MensajePUT.mensage = mensaje;
 
 						ListasVista Listas = new ListasVista();
 
@@ -123,11 +122,10 @@ namespace Proyecto_ED2.Controllers
 							}
 
 							string path2 = Server.MapPath("~/Archivos/");
-							var mensaje2 = Q.Cifrar(mensaje, receptor, path);
-							MensajePUT.mensage = mensaje2;
+							MensajePUT.mensage = Q.Cifrar(mensaje, receptor, path);
+							//MensajePUT.mensage = mensaje;
 							Recibidos.Add(MensajePUT);
 
-                            
 							ConversacionPUT.recibidos = Recibidos;
 							string urlPUT = urlApi + "api/Messages/" + conversacionRecibida2.id;
 							var jsonPUT = await clientePUT.PutAsync(urlPUT, new StringContent(
@@ -150,8 +148,8 @@ namespace Proyecto_ED2.Controllers
 							Messages MensajePOST = new Messages();
 							MensajePOST.fecha = DateTime.Now;
 							string path = Server.MapPath("~/Archivos/");
-							mensaje = Q.Cifrar(mensaje, emisor, path);
-							MensajePOST.mensage = mensaje;
+							MensajePOST.mensage = Q.Cifrar(mensaje, emisor, path);
+							//MensajePOST.mensage = mensaje;
 							ConversacionPOST.llave = emisor + "-" + receptor;
 							List<Messages> M = new List<Messages>();
 							M.Add(MensajePOST);
@@ -173,9 +171,8 @@ namespace Proyecto_ED2.Controllers
 							Messages MensajePOST = new Messages();
 							MensajePOST.fecha = DateTime.Now;
 							string path = Server.MapPath("~/Archivos/");
-
-							mensaje = Q.Cifrar(mensaje, receptor, path);
-							MensajePOST.mensage = mensaje;
+							MensajePOST.mensage = Q.Cifrar(mensaje, receptor, path);
+							//MensajePOST.mensage = mensaje;
 							ConversacionPOST.llave = receptor + "-" + emisor;
 							List<Messages> M = new List<Messages>();
 							M.Add(MensajePOST);
@@ -204,7 +201,9 @@ namespace Proyecto_ED2.Controllers
 						Conversacion ConversacionSinFiltro = new Conversacion();
 						Messages Mensaje1 = new Messages();
 						Mensaje1.fecha = DateTime.Now;
-						Mensaje1.mensage = mensaje;
+						string pathS = Server.MapPath("~/Archivos/");
+						Mensaje1.mensage = Q.Cifrar(mensaje, emisor, pathS);
+						//Mensaje1.mensage = mensaje;
 						ConversacionSinFiltro.llave = emisor + "-" + receptor;
 						List<Messages> M2 = new List<Messages>();
 						M2.Add(Mensaje1);

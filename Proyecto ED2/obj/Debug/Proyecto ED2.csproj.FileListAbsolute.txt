@@ -165,7 +165,6 @@ C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-
 C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.dll
 C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\obj\Debug\Proyecto ED2.pdb
 C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\netstandard.dll
-C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Algoritms.pdb
 C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Prueba.dll
 C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Proyecto-ED2\Proyecto ED2\bin\Prueba.pdb
 C:\Users\jealb\OneDrive\Escritorio\Proyecto-ED2-master\Proyecto ED2\bin\Proyecto ED2.dll.config
