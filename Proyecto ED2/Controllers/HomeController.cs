@@ -22,7 +22,8 @@ namespace Proyecto_ED2.Controllers
         {
 			string pathCarpeta2 = Path.Combine(Server.MapPath("~/"), "Archivos");
 			Directory.CreateDirectory(pathCarpeta2);
-
+			string pathCarpeta = Path.Combine(Server.MapPath("~/"), "ArchivosTmp");
+			Directory.CreateDirectory(pathCarpeta);
 			return RedirectToAction("LogIn");
         }
 		
@@ -91,7 +92,7 @@ namespace Proyecto_ED2.Controllers
             }
             catch
             {
-                TempData["msm"] = "Ha sucedido un error";
+                TempData["msm"] = "Usuario o Contraseña incorrecta";
                 return View();
             }
         }
@@ -144,7 +145,7 @@ namespace Proyecto_ED2.Controllers
 			}
 			catch
 			{
-				TempData["msm"] = "Ha sucedido un error";
+				TempData["msm"] = "Usuario o Contraseña incorrecta";
 				return View();
 			}
 		}
@@ -192,7 +193,7 @@ namespace Proyecto_ED2.Controllers
 			}
 			catch
 			{
-				TempData["msm"] = "Ha sucedido un error";
+				TempData["msm"] = "Debe llenar todos los campos";
 				return View();
 			}
 		}

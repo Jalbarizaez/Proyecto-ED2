@@ -46,8 +46,6 @@ namespace Proyecto_ED2.Models
 			{
 				usuario += item.ToString();
 			}
-			usuario = "1110011100";
-			//Q.Cifrado(usuario, SDEStxt, Salida, Entrada);
 			Z.Codificar(Entrada, Salida, 3);
 			contraseña = File.ReadAllText(Salida, Encoding.UTF8);
 
@@ -92,8 +90,6 @@ namespace Proyecto_ED2.Models
 			{
 				usuario += item.ToString();
 			}
-			usuario = "1110011100";
-			//Q.Descifrado(usuario, SDEStxt, Salida, Entrada);
 			Z.Decodificar(Entrada, Salida, 3);
 			contraseña = File.ReadAllText(Salida, Encoding.UTF8);
 
@@ -148,11 +144,21 @@ namespace Proyecto_ED2.Models
 			return Resultado;
 		}
 
-		public string ObtenerNombre(string url)
+		public void Comprimir(string path, string Salida)
 		{
-			string[] urls = url.Split('\\');
+			ServiciosDLL.CompresionHuffman H = new ServiciosDLL.CompresionHuffman();
+			H.Compresion(path, Salida);
+			File.Delete(path);
+		}
 
-			return "";
+		public void Descomprimir(string Entrada, string Salida)
+		{
+			ServiciosDLL.DescomprimirHuff H = new ServiciosDLL.DescomprimirHuff();
+			if (File.Exists(Salida))
+			{
+				File.Delete(Salida);
+			}
+			H.Descompresion(Entrada, Salida);
 		}
 	}
 }

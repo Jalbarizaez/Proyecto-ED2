@@ -36,21 +36,6 @@
 		<div class="leftside" no-gutters>
 			<center>
 				<div class="chatbox2">
-					<form method="post" enctype="multipart/form-data">
-						<h4>Enviar Archivo .txt</h4>
-						<input type="file" name="ArchivoEntrada" />
-						@{
-							if (TempData["friend"] != null)
-							{
-								<input type="hidden" name="receptor" value="@TempData["friend"]" />
-							}
-							else
-							{
-								<input type="hidden" name="receptor" value="█" />
-							}
-						}
-						<button type="submit">Enviar</button>
-					</form>
 					<h2>Archivos Recibidos:</h2>
 					@{
 						if (Model != null)
@@ -63,8 +48,8 @@
 											@{
 												foreach (string path in Model.Paths)
 												{
-													<a href="#" class="list-group-item">
-														@Html.ActionLink("NOMBRE ARCHIVO", "DescargarArchivo", "Usuario", new { Path = path }, null)
+													<a class="list-group-item">
+														@Html.ActionLink("ARCHIVO", "DescargarArchivo", "Usuario", new { Path = path }, null)
 													</a>
 												}
 											}
@@ -108,7 +93,7 @@
 		<div class="rightside" aling="center" no-gutters>
 			<br />
 			<center>
-				<form method="post">
+				<form method="post" enctype="multipart/form-data">
 					<div class="chatbox">
 						<div class="chat-form">
 							<label>Receptor: </label>
@@ -122,6 +107,8 @@
 									<input name="receptor" type="text" />
 								}
 							}
+							<h4>Enviar Archivo .txt</h4>
+							<input type="file" name="ArchivoEntrada" />
 							<input name="emisor" type="hidden" value="@TempData["usuario"]" />
 						</div>
 						<div class="chatlogs">
